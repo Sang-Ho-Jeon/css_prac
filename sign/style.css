@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/* 문제에서 주어진 초기 CSS */
+.a4{
+  width:800px;
+  height:400px;
+  border:3px solid #ccc; 
+}
+
+.sign{
+  font-family: "Satisfy", cursive;
+  font-size: 107px;
+  text-align:center;
+  line-height: 400px;
+}

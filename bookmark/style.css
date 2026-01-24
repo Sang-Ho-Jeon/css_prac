@@ -1,0 +1,24 @@
+.bookmark {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.mark__wrap {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.on {
+  display: none;
+}
+
+.mark__wrap:hover .on {
+  display: block;
+}
+
+.mark__wrap:hover .off {
+  display: none;
+}

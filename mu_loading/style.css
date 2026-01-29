@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+.loading {
+    width: 42px;
+    height: 42px;
+    border: 1px solid black;
+}
+
+.loading__item::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #0000FF;
+    display: inline-block;
+    position: relative;
+    -webkit-animation: loading 2s infinite cubic-bezier(0, 0, 0.04, 1.21);
+            animation: loading 2s infinite cubic-bezier(0, 0, 0.04, 1.21);
+}
+
+.loading__item::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #0000FF;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    -webkit-animation: loading2 2s infinite cubic-bezier(0, 0, 0.04, 1.21);
+            animation: loading2 2s infinite cubic-bezier(0, 0, 0.04, 1.21);
+}
+
+@-webkit-keyframes loading {
+    from{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 20px;
+    }
+    50%{
+        top: 20px;
+        left: 20px;
+    }
+    75%{
+        top: 20px;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes loading {
+    from{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 20px;
+    }
+    50%{
+        top: 20px;
+        left: 20px;
+    }
+    75%{
+        top: 20px;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
+
+@-webkit-keyframes loading2 {
+    from{
+        top: 20px;
+        left: 0;
+    }
+    25%{
+        top: 20px;
+        left: -20px;
+    }
+    50%{
+        top: 0;
+        left: -20px;
+    }
+    75%{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 20px;
+        left: 0;
+    }
+}
+
+@keyframes loading2 {
+    from{
+        top: 20px;
+        left: 0;
+    }
+    25%{
+        top: 20px;
+        left: -20px;
+    }
+    50%{
+        top: 0;
+        left: -20px;
+    }
+    75%{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 20px;
+        left: 0;
+    }
+}
